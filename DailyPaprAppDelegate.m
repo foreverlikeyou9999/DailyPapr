@@ -1,5 +1,6 @@
 #import "DailyPaprAppDelegate.h"
 #import "WallpaperView.h"
+#import "WallpaperRepository.h"
 
 @implementation DailyPaprAppDelegate
 
@@ -12,6 +13,9 @@
 -(void)awakeFromNib {	
 	[self configureStatusMenu];
 	[self displayStatusBarMenu];
+	
+	WallpaperRepository *repository = [[WallpaperRepository alloc] init];	
+	[repository wallpaper];	
 }
 
 -(void)displayStatusBarMenu {

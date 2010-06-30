@@ -9,9 +9,9 @@
 	};
 	256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1119, 511}}";
-			sepNavSelRange = "{328, 0}";
-			sepNavVisRange = "{0, 753}";
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 505}}";
+			sepNavSelRange = "{90, 0}";
+			sepNavVisRange = "{0, 885}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -26,6 +26,20 @@
 			D9149D6F11D860920016A4D8 /* DailyPapr */,
 		);
 		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					829,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -46,6 +60,22 @@
 					PBXFileDataSource_Errors_ColumnID,
 					PBXFileDataSource_Warnings_ColumnID,
 					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					881,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
 				);
 			};
 			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
@@ -70,25 +100,31 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 299542112;
-			PBXWorkspaceStateSaveDate = 299542112;
+			PBXPerProjectTemplateStateSaveDate = 299555532;
+			PBXWorkspaceStateSaveDate = 299555532;
 		};
 		perUserProjectItems = {
+			D93EA79811DAEE2E00F951DA /* PBXTextBookmark */ = D93EA79811DAEE2E00F951DA /* PBXTextBookmark */;
+			D93EA79A11DAEE2E00F951DA /* PBXTextBookmark */ = D93EA79A11DAEE2E00F951DA /* PBXTextBookmark */;
+			D93EA7C311DAEFAD00F951DA /* PBXTextBookmark */ = D93EA7C311DAEFAD00F951DA /* PBXTextBookmark */;
+			D93EA7CB11DAF04C00F951DA /* PBXTextBookmark */ = D93EA7CB11DAF04C00F951DA /* PBXTextBookmark */;
+			D93EA7CC11DAF04C00F951DA /* PBXTextBookmark */ = D93EA7CC11DAF04C00F951DA /* PBXTextBookmark */;
+			D93EA7F611DAF33400F951DA /* PBXTextBookmark */ = D93EA7F611DAF33400F951DA /* PBXTextBookmark */;
 			D95ABE2D11DAD31000BD0696 /* PBXTextBookmark */ = D95ABE2D11DAD31000BD0696 /* PBXTextBookmark */;
 			D95ABE2E11DAD31000BD0696 /* PBXTextBookmark */ = D95ABE2E11DAD31000BD0696 /* PBXTextBookmark */;
-			D95ABE2F11DAD31000BD0696 /* PBXTextBookmark */ = D95ABE2F11DAD31000BD0696 /* PBXTextBookmark */;
-			D95ABE3011DAD31000BD0696 /* PBXBookmark */ = D95ABE3011DAD31000BD0696 /* PBXBookmark */;
-			D95ABE3111DAD31000BD0696 /* PBXTextBookmark */ = D95ABE3111DAD31000BD0696 /* PBXTextBookmark */;
-			D95ABE3211DAD31000BD0696 /* PBXTextBookmark */ = D95ABE3211DAD31000BD0696 /* PBXTextBookmark */;
-			D95ABE4511DAD35300BD0696 /* PBXTextBookmark */ = D95ABE4511DAD35300BD0696 /* PBXTextBookmark */;
-			D96BB13B11DA9876005DDF83 = D96BB13B11DA9876005DDF83 /* PBXTextBookmark */;
-			D96BB13C11DA9876005DDF83 = D96BB13C11DA9876005DDF83 /* PBXTextBookmark */;
-			D96BB13D11DA9876005DDF83 = D96BB13D11DA9876005DDF83 /* PBXTextBookmark */;
-			D96D2D9311DA5B6C00D21DB9 = D96D2D9311DA5B6C00D21DB9 /* PBXTextBookmark */;
-			D96D2D9411DA5B6C00D21DB9 = D96D2D9411DA5B6C00D21DB9 /* PBXTextBookmark */;
+			D95ABE5A11DAD72200BD0696 /* PlistBookmark */ = D95ABE5A11DAD72200BD0696 /* PlistBookmark */;
+			D95ABE5B11DAD72200BD0696 /* PBXBookmark */ = D95ABE5B11DAD72200BD0696 /* PBXBookmark */;
 		};
 		sourceControlManager = D9149D7B11D860B00016A4D8 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 505}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 120}";
+			sepNavWindowFrame = "{{15, 0}, {1231, 878}}";
 		};
 	};
 	8D1107260486CEB800E47090 /* DailyPapr */ = {
@@ -146,6 +182,81 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	D93EA73711DADB7C00F951DA /* WallpaperRepository.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 505}}";
+			sepNavSelRange = "{139, 0}";
+			sepNavVisRange = "{0, 147}";
+		};
+	};
+	D93EA73811DADB7C00F951DA /* WallpaperRepository.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 702}}";
+			sepNavSelRange = "{1488, 0}";
+			sepNavVisRange = "{447, 576}";
+			sepNavWindowFrame = "{{15, 0}, {1231, 878}}";
+		};
+	};
+	D93EA79811DAEE2E00F951DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */;
+		name = "WallpaperView.m: 19";
+		rLen = 0;
+		rLoc = 282;
+		rType = 0;
+		vrLen = 738;
+		vrLoc = 0;
+	};
+	D93EA79A11DAEE2E00F951DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D93EA73711DADB7C00F951DA /* WallpaperRepository.h */;
+		name = "WallpaperRepository.h: 9";
+		rLen = 0;
+		rLoc = 139;
+		rType = 0;
+		vrLen = 147;
+		vrLoc = 0;
+	};
+	D93EA7C311DAEFAD00F951DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 120;
+		vrLoc = 0;
+	};
+	D93EA7CB11DAF04C00F951DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */;
+		name = "DailyPaprAppDelegate.m: 3";
+		rLen = 0;
+		rLoc = 90;
+		rType = 0;
+		vrLen = 885;
+		vrLoc = 0;
+	};
+	D93EA7CC11DAF04C00F951DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D93EA73811DADB7C00F951DA /* WallpaperRepository.m */;
+		name = "WallpaperRepository.m: 52";
+		rLen = 0;
+		rLoc = 1488;
+		rType = 0;
+		vrLen = 1008;
+		vrLoc = 451;
+	};
+	D93EA7F611DAF33400F951DA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D93EA73811DADB7C00F951DA /* WallpaperRepository.m */;
+		name = "WallpaperRepository.m: 47";
+		rLen = 0;
+		rLoc = 1444;
+		rType = 0;
+		vrLen = 1054;
+		vrLoc = 444;
+	};
 	D95ABDCD11DAB94700BD0696 /* WallpaperView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1119, 511}}";
@@ -156,7 +267,7 @@
 	D95ABDCE11DAB94700BD0696 /* WallpaperView.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1119, 507}}";
-			sepNavSelRange = "{503, 0}";
+			sepNavSelRange = "{282, 0}";
 			sepNavVisRange = "{0, 738}";
 		};
 	};
@@ -180,122 +291,19 @@
 		vrLen = 353;
 		vrLoc = 0;
 	};
-	D95ABE2F11DAD31000BD0696 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */;
-		name = "DailyPaprAppDelegate.m: 14";
+	D95ABE5A11DAD72200BD0696 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = D9D67DF711D86D3C009D6693 /* UnitTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/diogo/Developer/Projects/Personal/DailyPapr/UnitTests-Info.plist";
 		rLen = 0;
-		rLoc = 328;
-		rType = 0;
-		vrLen = 753;
-		vrLoc = 0;
+		rLoc = 9223372036854775808;
 	};
-	D95ABE3011DAD31000BD0696 /* PBXBookmark */ = {
+	D95ABE5B11DAD72200BD0696 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = D95ABE1311DACE5B00BD0696 /* wallpaper.jpg */;
-	};
-	D95ABE3111DAD31000BD0696 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */;
-		name = "WallpaperView.m: 25";
-		rLen = 0;
-		rLoc = 548;
-		rType = 0;
-		vrLen = 722;
-		vrLoc = 0;
-	};
-	D95ABE3211DAD31000BD0696 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */;
-		name = "WallpaperView.m: 25";
-		rLen = 0;
-		rLoc = 548;
-		rType = 0;
-		vrLen = 739;
-		vrLoc = 0;
-	};
-	D95ABE4511DAD35300BD0696 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */;
-		name = "WallpaperView.m: 25";
-		rLen = 0;
-		rLoc = 503;
-		rType = 0;
-		vrLen = 738;
-		vrLoc = 0;
-	};
-	D96BB13B11DA9876005DDF83 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D96D2D8211DA597500D21DB9 /* ParserTest.m */;
-		name = "ParserTest.m: 11";
-		rLen = 0;
-		rLoc = 135;
-		rType = 0;
-		vrLen = 142;
-		vrLoc = 0;
-	};
-	D96BB13C11DA9876005DDF83 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Incompatible type for argument 1 of 'setView:'";
-		fRef = 256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */;
-		rLen = 0;
-		rLoc = 31;
-		rType = 1;
-	};
-	D96BB13D11DA9876005DDF83 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */;
-		name = "DailyPaprAppDelegate.m: 20";
-		rLen = 0;
-		rLoc = 747;
-		rType = 0;
-		vrLen = 517;
-		vrLoc = 0;
-	};
-	D96D2D8211DA597500D21DB9 /* ParserTest.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = ParserTest.m;
-		path = /Users/diogo/Developer/Projects/Personal/DailyPapr/ParserTest.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {607, 308}}";
-			sepNavSelRange = "{135, 0}";
-			sepNavVisRange = "{0, 142}";
-		};
-	};
-	D96D2D8C11DA5AC400D21DB9 /* Parser.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = Parser.h;
-		path = /Users/diogo/Developer/Projects/Personal/DailyPapr/Parser.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1119, 488}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 66}";
-		};
-	};
-	D96D2D9311DA5B6C00D21DB9 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* DailyPaprAppDelegate.h */;
-		name = "DailyPaprAppDelegate.h: 11";
-		rLen = 0;
-		rLoc = 346;
-		rType = 0;
-		vrLen = 258;
-		vrLoc = 0;
-	};
-	D96D2D9411DA5B6C00D21DB9 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D96D2D8C11DA5AC400D21DB9 /* Parser.h */;
-		name = "Parser.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 66;
-		vrLoc = 0;
 	};
 }

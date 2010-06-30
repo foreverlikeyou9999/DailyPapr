@@ -12,6 +12,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D93EA73911DADB7C00F951DA /* WallpaperRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EA73811DADB7C00F951DA /* WallpaperRepository.m */; };
 		D95ABDCF11DAB94700BD0696 /* WallpaperView.m in Sources */ = {isa = PBXBuildFile; fileRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */; };
 		D95ABE1411DACE5B00BD0696 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95ABE1311DACE5B00BD0696 /* wallpaper.jpg */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* DailyPapr-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DailyPapr-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* DailyPapr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPapr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93EA73711DADB7C00F951DA /* WallpaperRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperRepository.h; sourceTree = "<group>"; };
+		D93EA73811DADB7C00F951DA /* WallpaperRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperRepository.m; sourceTree = "<group>"; };
 		D95ABDCD11DAB94700BD0696 /* WallpaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperView.h; sourceTree = "<group>"; };
 		D95ABDCE11DAB94700BD0696 /* WallpaperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperView.m; sourceTree = "<group>"; };
 		D95ABE1311DACE5B00BD0696 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
@@ -54,6 +57,8 @@
 				256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */,
 				D95ABDCD11DAB94700BD0696 /* WallpaperView.h */,
 				D95ABDCE11DAB94700BD0696 /* WallpaperView.m */,
+				D93EA73711DADB7C00F951DA /* WallpaperRepository.h */,
+				D93EA73811DADB7C00F951DA /* WallpaperRepository.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* DailyPaprAppDelegate.m in Sources */,
 				D95ABDCF11DAB94700BD0696 /* WallpaperView.m in Sources */,
+				D93EA73911DADB7C00F951DA /* WallpaperRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
