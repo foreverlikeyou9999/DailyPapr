@@ -32,7 +32,6 @@
 		D95ABDCD11DAB94700BD0696 /* WallpaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperView.h; sourceTree = "<group>"; };
 		D95ABDCE11DAB94700BD0696 /* WallpaperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperView.m; sourceTree = "<group>"; };
 		D95ABE1311DACE5B00BD0696 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
-		D96D2D8211DA597500D21DB9 /* ParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserTest.m; sourceTree = "<group>"; };
 		D9D67DF711D86D3C009D6693 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +87,6 @@
 		29B97314FDCFA39411CA2CEA /* DailyPapr */ = {
 			isa = PBXGroup;
 			children = (
-				D96D2D8111DA591B00D21DB9 /* Test Classes */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -126,14 +124,6 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D96D2D8111DA591B00D21DB9 /* Test Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D96D2D8211DA597500D21DB9 /* ParserTest.m */,
-			);
-			name = "Test Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

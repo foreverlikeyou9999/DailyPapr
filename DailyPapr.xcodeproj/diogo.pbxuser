@@ -253,6 +253,12 @@
 		vrLoc = 0;
 	};
 	D96D2D8211DA597500D21DB9 /* ParserTest.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ParserTest.m;
+		path = /Users/diogo/Developer/Projects/Personal/DailyPapr/ParserTest.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {607, 308}}";
 			sepNavSelRange = "{135, 0}";
