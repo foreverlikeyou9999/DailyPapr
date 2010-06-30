@@ -2,22 +2,25 @@
 {
 	256AC3D80F4B6AC300CF3369 /* DailyPaprAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {769, 318}}";
-			sepNavSelRange = "{251, 0}";
-			sepNavVisRange = "{0, 258}";
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 511}}";
+			sepNavSelRange = "{346, 0}";
+			sepNavVisRange = "{0, 353}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {769, 333}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 517}";
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 511}}";
+			sepNavSelRange = "{328, 0}";
+			sepNavVisRange = "{0, 753}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = D9149D6F11D860920016A4D8 /* DailyPapr */;
 		activeTarget = 8D1107260486CEB800E47090 /* DailyPapr */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* DailyPapr */,
+		);
 		codeSenseManager = D9149D7C11D860B00016A4D8 /* Code sense */;
 		executables = (
 			D9149D6F11D860920016A4D8 /* DailyPapr */,
@@ -28,7 +31,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					591,
+					941,
 					20,
 					48,
 					43,
@@ -50,7 +53,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					551,
+					901,
 					60,
 					20,
 					48,
@@ -67,14 +70,22 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 299436371;
-			PBXWorkspaceStateSaveDate = 299436371;
+			PBXPerProjectTemplateStateSaveDate = 299542112;
+			PBXWorkspaceStateSaveDate = 299542112;
 		};
 		perUserProjectItems = {
-			D99645E711D908E70080EC94 = D99645E711D908E70080EC94 /* PBXTextBookmark */;
-			D99645F111D9095C0080EC94 /* PBXTextBookmark */ = D99645F111D9095C0080EC94 /* PBXTextBookmark */;
-			D9BBA22011D8FF3D00415F1A = D9BBA22011D8FF3D00415F1A /* PBXTextBookmark */;
-			D9BBA22211D8FF3D00415F1A = D9BBA22211D8FF3D00415F1A /* PBXTextBookmark */;
+			D95ABE2D11DAD31000BD0696 /* PBXTextBookmark */ = D95ABE2D11DAD31000BD0696 /* PBXTextBookmark */;
+			D95ABE2E11DAD31000BD0696 /* PBXTextBookmark */ = D95ABE2E11DAD31000BD0696 /* PBXTextBookmark */;
+			D95ABE2F11DAD31000BD0696 /* PBXTextBookmark */ = D95ABE2F11DAD31000BD0696 /* PBXTextBookmark */;
+			D95ABE3011DAD31000BD0696 /* PBXBookmark */ = D95ABE3011DAD31000BD0696 /* PBXBookmark */;
+			D95ABE3111DAD31000BD0696 /* PBXTextBookmark */ = D95ABE3111DAD31000BD0696 /* PBXTextBookmark */;
+			D95ABE3211DAD31000BD0696 /* PBXTextBookmark */ = D95ABE3211DAD31000BD0696 /* PBXTextBookmark */;
+			D95ABE4511DAD35300BD0696 /* PBXTextBookmark */ = D95ABE4511DAD35300BD0696 /* PBXTextBookmark */;
+			D96BB13B11DA9876005DDF83 = D96BB13B11DA9876005DDF83 /* PBXTextBookmark */;
+			D96BB13C11DA9876005DDF83 = D96BB13C11DA9876005DDF83 /* PBXTextBookmark */;
+			D96BB13D11DA9876005DDF83 = D96BB13D11DA9876005DDF83 /* PBXTextBookmark */;
+			D96D2D9311DA5B6C00D21DB9 = D96D2D9311DA5B6C00D21DB9 /* PBXTextBookmark */;
+			D96D2D9411DA5B6C00D21DB9 = D96D2D9411DA5B6C00D21DB9 /* PBXTextBookmark */;
 		};
 		sourceControlManager = D9149D7B11D860B00016A4D8 /* Source Control */;
 		userBuildSettings = {
@@ -135,44 +146,150 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	D99645E711D908E70080EC94 /* PBXTextBookmark */ = {
+	D95ABDCD11DAB94700BD0696 /* WallpaperView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 511}}";
+			sepNavSelRange = "{176, 0}";
+			sepNavVisRange = "{0, 183}";
+		};
+	};
+	D95ABDCE11DAB94700BD0696 /* WallpaperView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 507}}";
+			sepNavSelRange = "{503, 0}";
+			sepNavVisRange = "{0, 738}";
+		};
+	};
+	D95ABE2D11DAD31000BD0696 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* DailyPaprAppDelegate.h */;
-		name = "DailyPaprAppDelegate.h: 11";
+		fRef = D95ABDCD11DAB94700BD0696 /* WallpaperView.h */;
+		name = "WallpaperView.h: 13";
 		rLen = 0;
-		rLoc = 251;
+		rLoc = 176;
 		rType = 0;
-		vrLen = 258;
+		vrLen = 183;
 		vrLoc = 0;
 	};
-	D99645F111D9095C0080EC94 /* PBXTextBookmark */ = {
+	D95ABE2E11DAD31000BD0696 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3D80F4B6AC300CF3369 /* DailyPaprAppDelegate.h */;
-		name = "DailyPaprAppDelegate.h: 11";
+		name = "DailyPaprAppDelegate.h: 15";
 		rLen = 0;
-		rLoc = 251;
+		rLoc = 346;
 		rType = 0;
-		vrLen = 258;
+		vrLen = 353;
 		vrLoc = 0;
 	};
-	D9BBA22011D8FF3D00415F1A /* PBXTextBookmark */ = {
+	D95ABE2F11DAD31000BD0696 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */;
-		name = "DailyPaprAppDelegate.m: 1";
+		name = "DailyPaprAppDelegate.m: 14";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 328;
+		rType = 0;
+		vrLen = 753;
+		vrLoc = 0;
+	};
+	D95ABE3011DAD31000BD0696 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = D95ABE1311DACE5B00BD0696 /* wallpaper.jpg */;
+	};
+	D95ABE3111DAD31000BD0696 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */;
+		name = "WallpaperView.m: 25";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 722;
+		vrLoc = 0;
+	};
+	D95ABE3211DAD31000BD0696 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */;
+		name = "WallpaperView.m: 25";
+		rLen = 0;
+		rLoc = 548;
+		rType = 0;
+		vrLen = 739;
+		vrLoc = 0;
+	};
+	D95ABE4511DAD35300BD0696 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */;
+		name = "WallpaperView.m: 25";
+		rLen = 0;
+		rLoc = 503;
+		rType = 0;
+		vrLen = 738;
+		vrLoc = 0;
+	};
+	D96BB13B11DA9876005DDF83 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D96D2D8211DA597500D21DB9 /* ParserTest.m */;
+		name = "ParserTest.m: 11";
+		rLen = 0;
+		rLoc = 135;
+		rType = 0;
+		vrLen = 142;
+		vrLoc = 0;
+	};
+	D96BB13C11DA9876005DDF83 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incompatible type for argument 1 of 'setView:'";
+		fRef = 256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */;
+		rLen = 0;
+		rLoc = 31;
+		rType = 1;
+	};
+	D96BB13D11DA9876005DDF83 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* DailyPaprAppDelegate.m */;
+		name = "DailyPaprAppDelegate.m: 20";
+		rLen = 0;
+		rLoc = 747;
 		rType = 0;
 		vrLen = 517;
 		vrLoc = 0;
 	};
-	D9BBA22211D8FF3D00415F1A /* PBXTextBookmark */ = {
+	D96D2D8211DA597500D21DB9 /* ParserTest.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {607, 308}}";
+			sepNavSelRange = "{135, 0}";
+			sepNavVisRange = "{0, 142}";
+		};
+	};
+	D96D2D8C11DA5AC400D21DB9 /* Parser.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Parser.h;
+		path = /Users/diogo/Developer/Projects/Personal/DailyPapr/Parser.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1119, 488}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 66}";
+		};
+	};
+	D96D2D9311DA5B6C00D21DB9 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3D80F4B6AC300CF3369 /* DailyPaprAppDelegate.h */;
 		name = "DailyPaprAppDelegate.h: 11";
 		rLen = 0;
-		rLoc = 251;
+		rLoc = 346;
 		rType = 0;
 		vrLen = 258;
+		vrLoc = 0;
+	};
+	D96D2D9411DA5B6C00D21DB9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D96D2D8C11DA5AC400D21DB9 /* Parser.h */;
+		name = "Parser.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 66;
 		vrLoc = 0;
 	};
 }

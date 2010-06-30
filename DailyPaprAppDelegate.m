@@ -1,4 +1,5 @@
 #import "DailyPaprAppDelegate.h"
+#import "WallpaperView.h"
 
 @implementation DailyPaprAppDelegate
 
@@ -8,7 +9,8 @@
 	// Insert code here to initialize your application 
 }
 
--(void)awakeFromNib {
+-(void)awakeFromNib {	
+	[self configureStatusMenu];
 	[self displayStatusBarMenu];
 }
 
@@ -18,6 +20,14 @@
 	[statusItem setTitle: @"DailyPapr"];
 	[statusItem setMenu:statusMenu];
 	[statusItem setHighlightMode:YES];
+}
+
+-(void)configureStatusMenu {	
+	[wallpaperView setupImage];
+	
+	NSMenuItem *menuItem = [statusMenu itemAtIndex:0];
+	[menuItem setView: wallpaperView];
+	[menuItem setTarget:self];
 }
 
 @end
