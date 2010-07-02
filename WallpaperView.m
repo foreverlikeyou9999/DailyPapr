@@ -8,9 +8,9 @@
 }
 
 - (void) setupImage {
-	//if(! [self imageConfigured]) {
+	if(! [self imageConfigured]) {
 		image = [[NSImage imageNamed:@"wallpaper.jpg"] retain];
-	//}
+	}
 }
 
 - (Boolean) imageConfigured {

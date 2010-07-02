@@ -12,10 +12,7 @@
 
 -(void)awakeFromNib {	
 	[self configureStatusMenu];
-	[self displayStatusBarMenu];
-	
-	WallpaperRepository *repository = [[WallpaperRepository alloc] init];	
-	[repository wallpaper];	
+	[self displayStatusBarMenu];	
 }
 
 -(void)displayStatusBarMenu {
