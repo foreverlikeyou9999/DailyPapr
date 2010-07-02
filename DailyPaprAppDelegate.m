@@ -1,6 +1,5 @@
 #import "DailyPaprAppDelegate.h"
 #import "WallpaperView.h"
-#import "WallpaperRepository.h"
 
 @implementation DailyPaprAppDelegate
 
