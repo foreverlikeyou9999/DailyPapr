@@ -31,10 +31,19 @@
 
 -(void)testXPathQuery
 {
-	NSArray *nodes = [rootNode nodesForXPath:@"//div[@class='preview']" error:&error];	
+	NSArray *nodes = [rootNode nodesForXPath:@"//div[@class='preview']/a/img" error:&error];	
 	NSNumber *expected = [NSNumber numberWithInt:10];
 	NSNumber *nodesCount = [NSNumber numberWithUnsignedInteger:[nodes count]];
 	STAssertEqualObjects(expected, nodesCount, @"Nodes count must be 10, but it was %u instead!", [nodesCount intValue]);
+}
+
+-(void)testGetFirstWallpaperPath
+{
+	NSArray *nodes = [rootNode nodesForXPath:@"//div[@class='preview']/a/img" error:&error];
+	NSXMLElement *img = [nodes objectAtIndex:0];	
+	NSString *src = [[img attributeForName:@"src"] stringValue];
+	
+	STAssertEqualObjects(@"http://interfacelift.com/wallpaper_beta/previews/02288_futbolito.jpg", src, @"Expect img, but was '%s'", [src UTF8String]);
 }
 
 @end
