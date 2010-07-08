@@ -13,6 +13,13 @@
 	}
 }
 
+-(void) setup:(Wallpaper *)wallpaper
+{
+	NSURL *imageURL = wallpaper.thumbnail;
+	NSData *imageData = [imageURL resourceDataUsingCache:NO];
+	image = [[[NSImage alloc] initWithData:imageData] retain];
+}
+
 - (Boolean) imageConfigured {
 	return image != nil;
 }

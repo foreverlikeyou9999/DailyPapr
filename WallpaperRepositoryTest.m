@@ -30,7 +30,7 @@
 -(void)test_Should_Get_First_Wallpaper_When_Call_Next_First_Time
 {
 	Wallpaper *expected = [[Wallpaper alloc] init];
-	expected.thumbnailSizePath = @"http://interfacelift.com/wallpaper_beta/previews/02288_futbolito.jpg";
+	expected.thumbnail = [NSURL URLWithString:@"http://interfacelift.com/wallpaper_beta/previews/02288_futbolito.jpg"];
 	
 	Wallpaper *received = [repository next];
 	

@@ -3,11 +3,7 @@
 
 @implementation Wallpaper
 
-@synthesize name;
-@synthesize description;
-@synthesize originalSizePath;
-@synthesize date;
-@synthesize thumbnailSizePath;
+@synthesize thumbnail;
 
 - (BOOL)isEqual:(id)other {
     if (other == self)
@@ -23,7 +19,7 @@
         return YES;
 	}
 	
-    if (![(id)[self thumbnailSizePath] isEqual:[wallpaper thumbnailSizePath]]) 
+    if (![(id)[self thumbnail] isEqual:[wallpaper thumbnail]]) 
 	{
         return NO;
 	}

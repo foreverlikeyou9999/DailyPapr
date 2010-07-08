@@ -3,7 +3,7 @@
 
 @implementation WallpaperRepository
 
--(WallpaperRepository *)initWithXML:(NSXMLDocument *)xmlDocument
+-(id)initWithXML:(NSXMLDocument *)xmlDocument
 {
 	[self init];
 	
@@ -23,9 +23,9 @@
 	NSXMLElement *img = [nodes objectAtIndex:0];
 	
 	Wallpaper *wallpaper = [[Wallpaper alloc] init];
-	wallpaper.thumbnailSizePath = [[img attributeForName:@"src"] stringValue];
+	wallpaper.thumbnail = [NSURL URLWithString:[[img attributeForName:@"src"] stringValue]];
 	
-	return nil;
+	return wallpaper;
 }
 
 @end

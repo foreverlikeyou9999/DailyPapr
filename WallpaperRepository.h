@@ -5,7 +5,7 @@
 	NSArray *nodes;
 }
 
--(WallpaperRepository *)initWithXML:(NSXMLDocument *)xmlDocument;
+-(id)initWithXML:(NSXMLDocument *)xmlDocument;
 -(Wallpaper *)next;
 
 @end
