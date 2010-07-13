@@ -2,44 +2,49 @@
 
 @implementation WallpaperView
 
-
-- (void) awakeFromNib {
-	[self setupImage];
+- (void) awakeFromNib 
+{
+	[self setUp];
 }
 
-- (void) setupImage {
-	if(! [self imageConfigured]) {
+- (void) setUp 
+{
+	if(! [self wallpaperConfigured]) {
 		image = [[NSImage imageNamed:@"wallpaper.jpg"] retain];
 	}
 }
 
--(void) setup:(Wallpaper *)wallpaper
+-(void) setUpWallpaper:(Wallpaper *)wallpaper
 {
 	NSURL *imageURL = wallpaper.thumbnail;
 	NSData *imageData = [imageURL resourceDataUsingCache:NO];
 	image = [[[NSImage alloc] initWithData:imageData] retain];
 }
 
-- (Boolean) imageConfigured {
+- (Boolean) wallpaperConfigured 
+{
 	return image != nil;
 }
 
-- (void) drawRect:(NSRect)rect {	
+- (void) drawRect:(NSRect)rect 
+{	
 	[image drawInRect:[self viewRect] fromRect:[self imageRect]	operation:NSCompositeCopy  fraction:1.0];
 }
 
-- (NSRect) viewRect {
+- (NSRect) viewRect 
+{
   return NSMakeRect([self bounds].origin.x + 5, [self bounds].origin.y +10, [self frame].size.width -10, [self frame].size.height -10);
 }
 
-- (NSRect) imageRect {
+- (NSRect) imageRect 
+{
 	return NSMakeRect(0,0,[image size].width,[image size].height);
 }
 
-- (void) dealloc {
+- (void) dealloc 
+{
 	[image release];
 	[super dealloc];
 }
-
 
 @end

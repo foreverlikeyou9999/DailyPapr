@@ -5,14 +5,10 @@
 	NSImage *image;
 }
 
-- (void)setupImage;
-
-- (void)setup:(Wallpaper *)wallpaper;
-
-- (Boolean)imageConfigured;
-
-- (NSRect) viewRect ;
-
-- (NSRect) imageRect ;
+-(void)setUp;
+-(void)setUpWallpaper:(Wallpaper *)wallpaper;
+-(Boolean)wallpaperConfigured;
+-(NSRect)viewRect;
+-(NSRect)imageRect;
 
 @end
