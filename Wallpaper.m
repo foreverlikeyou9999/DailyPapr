@@ -5,6 +5,20 @@
 
 @synthesize thumbnail;
 
+
+-(Wallpaper *)initWithThumbnailURL:(NSURL *)thumbnail
+{
+	if([super init]) {		
+		self.thumbnail = thumbnail;
+		return self;
+	}
+}
+
++(Wallpaper *)wallpaperWithThumbnailURL:(NSURL *)thumbnail
+{
+	return [[Wallpaper alloc] initWithThumbnailURL:thumbnail];
+}
+
 - (BOOL)isEqual:(id)other 
 {
     if (other == self) {
