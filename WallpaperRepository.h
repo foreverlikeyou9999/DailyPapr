@@ -1,11 +1,14 @@
 #import <Cocoa/Cocoa.h>
 #import "Wallpaper.h"
+#import "WallpaperWebService.h"
 
-@interface WallpaperRepository : NSObject {
-	NSArray *nodes;
+@interface WallpaperRepository : NSObject <WallpaperWebServiceDelegate> {
+	NSArray *wallpapers;
+	WallpaperWebService *webService;
+	NSUInteger *wallpaperCalls;
 }
 
--(id)initWithXML:(NSXMLDocument *)xmlDocument;
+-(id)initWithWebService:(WallpaperWebService *)aWebService;
 -(Wallpaper *)next;
 
 @end

@@ -3,29 +3,31 @@
 
 @implementation WallpaperRepository
 
--(id)initWithXML:(NSXMLDocument *)xmlDocument
+-(id)initWithWebService:(WallpaperWebService *)aWebService
 {
-	[self init];
-	
-	NSError *error;
-	nodes = [[xmlDocument rootElement] nodesForXPath:@"//div[@class='preview']/a/img" error:&error];	
-	
-	if(error) 
-	{
-		NSLog(@"Error: %@", error);
-	}	
+	if([super init]) {
+		webService = aWebService;
+		[webService doRequest];
+		wallpaperCalls = 0;
+	}
 	
 	return self;
 }
 
 -(Wallpaper *)next
 {
-	NSXMLElement *img = [nodes objectAtIndex:0];
-	
-	Wallpaper *wallpaper = [[Wallpaper alloc] init];
-	wallpaper.thumbnail = [NSURL URLWithString:[[img attributeForName:@"src"] stringValue]];
-	
-	return wallpaper;
+	if (wallpapers != nil) {
+		Wallpaper *w = [wallpapers objectAtIndex:0];
+		return w;
+	} else {
+		NSLog(@"Wallpapars Array not initialized yet.");
+		return [Wallpaper wallpaperDefault];
+	}	
+}
+
+-(void)receiveWallpapers:(NSArray *)aWallpapersArray
+{
+	wallpapers = aWallpapersArray;
 }
 
 @end

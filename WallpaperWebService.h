@@ -2,7 +2,7 @@
 #import "Wallpaper.h"
 
 @protocol WallpaperWebServiceDelegate
--(void)receiveWallpapers:(NSArray *)wallpapers;
+-(void)receiveWallpapers:(NSArray *)aWallpapersArray;
 @end
 
 @interface WallpaperWebService : NSObject {

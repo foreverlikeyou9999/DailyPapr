@@ -10,7 +10,8 @@
 -(BOOL)isEqualToWallpaper:(Wallpaper *)wallpaper;
 -(NSString *)description;
 
--(Wallpaper *) initWithThumbnailURL:(NSURL *)thumbnail;
-+(Wallpaper *)wallpaperWithThumbnailURL:(NSURL *)thumbnail;
+-(Wallpaper *) initWithThumbnailURL:(NSURL *)aThumbnail;
++(Wallpaper *)wallpaperWithThumbnailURL:(NSURL *)aThumbnail;
++(Wallpaper *)wallpaperDefault;
 
 @end

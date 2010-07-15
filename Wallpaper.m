@@ -6,17 +6,24 @@
 @synthesize thumbnail;
 
 
--(Wallpaper *)initWithThumbnailURL:(NSURL *)thumbnail
++(Wallpaper *)wallpaperDefault
 {
-	if([super init]) {		
-		self.thumbnail = thumbnail;
-		return self;
-	}
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"wallpaper" ofType:@"jpg"]; 
+	return [self wallpaperWithThumbnailURL:[NSURL fileURLWithPath:path]];
 }
 
-+(Wallpaper *)wallpaperWithThumbnailURL:(NSURL *)thumbnail
+-(Wallpaper *)initWithThumbnailURL:(NSURL *)aThumbnail
 {
-	return [[Wallpaper alloc] initWithThumbnailURL:thumbnail];
+	if([super init]) {		
+		thumbnail = aThumbnail;		
+	}
+	
+	return self;
+}
+
++(Wallpaper *)wallpaperWithThumbnailURL:(NSURL *)aThumbnail
+{
+	return [[Wallpaper alloc] initWithThumbnailURL:aThumbnail];
 }
 
 - (BOOL)isEqual:(id)other 

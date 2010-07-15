@@ -9,9 +9,7 @@
 
 - (void) setUp 
 {
-	if(! [self wallpaperConfigured]) {
-		image = [[NSImage imageNamed:@"wallpaper.jpg"] retain];
-	}
+	[self setUpWallpaper:[Wallpaper wallpaperDefault]];
 }
 
 -(void) setUpWallpaper:(Wallpaper *)wallpaper
