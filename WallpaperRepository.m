@@ -7,6 +7,7 @@
 {
 	if([super init]) {
 		webService = aWebService;
+		webService.delegate = self;
 		[webService doRequest];
 		wallpaperCalls = 0;
 	}
@@ -17,17 +18,34 @@
 -(Wallpaper *)next
 {
 	if (wallpapers != nil) {
-		Wallpaper *w = [wallpapers objectAtIndex:0];
-		return w;
+		NSUInteger totalWallpapers = [wallpapers count];
+		if(totalWallpapers > wallpaperCalls) {
+			Wallpaper *w = [[wallpapers objectAtIndex:wallpaperCalls] retain];
+			wallpaperCalls++;
+			return w;
+		} else {
+			NSLog(@"No more wallpapers to display.");
+			return [wallpapers objectAtIndex:([wallpapers count] -1)];
+		}
 	} else {
-		NSLog(@"Wallpapars Array not initialized yet.");
+		NSLog(@"Wallpapers not received yet.");
 		return [Wallpaper wallpaperDefault];
 	}	
 }
 
 -(void)receiveWallpapers:(NSArray *)aWallpapersArray
 {
-	wallpapers = aWallpapersArray;
+	wallpapers = [[NSArray alloc] initWithArray:aWallpapersArray];
+	[wallpapers retain];
+	NSLog(@"%u wallpapers reveived.", [wallpapers count]);
+}
+
+-(void)dealloc
+{
+	[wallpapers release];
+	[webService release];
+	
+	[super dealloc];
 }
 
 @end

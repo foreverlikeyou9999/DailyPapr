@@ -15,7 +15,8 @@
 -(Wallpaper *)initWithThumbnailURL:(NSURL *)aThumbnail
 {
 	if([super init]) {		
-		thumbnail = aThumbnail;		
+		thumbnail = aThumbnail;
+		[thumbnail retain];
 	}
 	
 	return self;
@@ -23,7 +24,7 @@
 
 +(Wallpaper *)wallpaperWithThumbnailURL:(NSURL *)aThumbnail
 {
-	return [[Wallpaper alloc] initWithThumbnailURL:aThumbnail];
+	return [[[Wallpaper alloc] initWithThumbnailURL:aThumbnail] autorelease];
 }
 
 - (BOOL)isEqual:(id)other 
@@ -52,6 +53,13 @@
 -(NSString *)description
 {
 	return @"Wallpaper instance";
+}
+
+-(void)dealloc
+{
+	[thumbnail release];
+	
+	[super dealloc];
 }
 
 @end

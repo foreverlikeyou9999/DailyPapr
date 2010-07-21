@@ -13,8 +13,18 @@
 
 -(void)setUpWallpaper:(Wallpaper *)wallpaper
 {
+	[wallpaper retain];
 	[view setUpWallpaper:wallpaper];
 	[view display];
+	
+	[wallpaper release];
+}
+
+-(void)dealloc
+{
+	[view release];
+	
+	[super dealloc];
 }
 
 @end

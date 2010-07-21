@@ -15,7 +15,8 @@
 -(id)init
 {
 	if ([super init]) {
-		wallpapers = [[NSMutableArray alloc]initWithCapacity:10];		
+		wallpapers = [[NSMutableArray alloc]initWithCapacity:10];
+		webData = [[NSMutableData alloc] init];
 	}	
 	
 	return self;
@@ -65,10 +66,11 @@
 		NSArray *nodes = [[document rootElement] nodesForXPath:@"//div[@class='preview']/a/img" error:&error];		
 		for (NSXMLElement *img in nodes) {
 			Wallpaper *wallpaper = [Wallpaper wallpaperWithThumbnailURL:[NSURL URLWithString:[[img attributeForName:@"src"] stringValue]]];
+			[wallpaper retain];
 			[wallpapers addObject:wallpaper];
 		}
 		
-		[delegate receiveWallpapers:[wallpapers copy]];		
+		[delegate receiveWallpapers:wallpapers];		
 	} 
 }
 

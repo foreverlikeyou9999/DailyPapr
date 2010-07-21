@@ -14,9 +14,12 @@
 
 -(void) setUpWallpaper:(Wallpaper *)wallpaper
 {
+	[wallpaper retain];
 	NSURL *imageURL = wallpaper.thumbnail;
 	NSData *imageData = [imageURL resourceDataUsingCache:NO];
 	image = [[[NSImage alloc] initWithData:imageData] retain];
+	
+	[wallpaper release];
 }
 
 - (Boolean) wallpaperConfigured 
@@ -42,6 +45,7 @@
 - (void) dealloc 
 {
 	[image release];
+	
 	[super dealloc];
 }
 

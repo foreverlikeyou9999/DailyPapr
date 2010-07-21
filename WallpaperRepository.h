@@ -5,7 +5,7 @@
 @interface WallpaperRepository : NSObject <WallpaperWebServiceDelegate> {
 	NSArray *wallpapers;
 	WallpaperWebService *webService;
-	NSUInteger *wallpaperCalls;
+	NSUInteger wallpaperCalls;
 }
 
 -(id)initWithWebService:(WallpaperWebService *)aWebService;
