@@ -2,7 +2,7 @@
 
 DailyPapr is a free Mac Menubar Application that browses beautiful pictures on the web and set up them as wallpaper. All you have to do is click on the thumbnail and "Voilà!", that beautiful picture was downloaded and set up as your wallpaper.
 
-![DailyPapr] (http://blog.diogosantos.com/wp-content/resources/2010/07/wpid-dailypapr-2010-07-21-08-411.png)
+![DailyPapr](http://blog.diogosantos.com/wp-content/resources/2010/07/wpid-dailypapr-2010-07-21-08-411.png)
 
 # WARNING
 
