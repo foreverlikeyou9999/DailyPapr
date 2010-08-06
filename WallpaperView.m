@@ -2,6 +2,8 @@
 
 @implementation WallpaperView
 
+@synthesize delegate;
+
 - (void) awakeFromNib 
 {
 	[self setUp];
@@ -12,15 +14,25 @@
 	[self setUpWallpaper:[Wallpaper wallpaperDefault]];
 }
 
--(void) setUpWallpaper:(Wallpaper *)wallpaper
+-(void) setUpWallpaper:(Wallpaper *)aWallpaper
 {
-	[wallpaper retain];
+	wallpaper = aWallpaper;	
+	[wallpaper retain];	
+	
 	NSURL *imageURL = wallpaper.thumbnail;
 	NSData *imageData = [imageURL resourceDataUsingCache:NO];
 	image = [[[NSImage alloc] initWithData:imageData] retain];
 	
 	[wallpaper release];
 }
+
+#define menuItem ([self enclosingMenuItem])
+
+-(void)mouseDown:(NSEvent *)theEvent 
+{
+	[delegate mouseDownAction:wallpaper];
+}
+
 
 - (Boolean) wallpaperConfigured 
 {
@@ -29,7 +41,7 @@
 
 - (void) drawRect:(NSRect)rect 
 {	
-	[image drawInRect:[self viewRect] fromRect:[self imageRect]	operation:NSCompositeCopy  fraction:1.0];
+	[image drawInRect:[self viewRect] fromRect:[self imageRect]	operation:NSCompositeCopy  fraction:1.0];	
 }
 
 - (NSRect) viewRect 
@@ -45,6 +57,7 @@
 - (void) dealloc 
 {
 	[image release];
+	[wallpaper release];
 	
 	[super dealloc];
 }

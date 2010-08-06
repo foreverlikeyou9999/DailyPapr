@@ -15,6 +15,8 @@
 
 -(void)configureMenu
 {
+	menu.controllerRef = self;
+	
 	NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:80.0];
 	[statusItem retain];
 	[statusItem setTitle: @"DailyPapr"];
@@ -28,6 +30,26 @@
 	repository = [[[WallpaperRepository alloc] initWithWebService:webService] retain];
 	
 	[self configureMenu];
+}
+
+
+-(void)mouseDownAction:(Wallpaper *)clickedWallpaper
+{
+	NSDate *date = [NSDate date];	
+	unsigned long actualTime = [date timeIntervalSinceReferenceDate];	
+	id path = [@"/tmp/" stringByAppendingFormat: @"%qu.jpg", actualTime];	
+	NSLog(@"Saving wallpaper to %@", path);
+	
+	NSData *data = [NSData dataWithContentsOfURL:clickedWallpaper.thumbnail];
+	[data writeToFile:path atomically:YES];		
+	NSURL *fileURL = [NSURL fileURLWithPath:path];
+	
+	NSError *error;
+	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:NO], NSWorkspaceDesktopImageAllowClippingKey, [NSNumber numberWithInteger:NSImageScaleProportionallyUpOrDown], NSWorkspaceDesktopImageScalingKey, nil];
+	BOOL result = [[NSWorkspace sharedWorkspace] setDesktopImageURL:fileURL forScreen:[[NSScreen screens] lastObject] options:options error:&error];
+	if (!result) {
+		NSLog(@"Error: %@", [error localizedDescription]);
+	}	
 }
 
 -(void)dealloc

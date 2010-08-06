@@ -3,7 +3,7 @@
 #import "WallpaperRepository.h"
 #import "WallpaperWebService.h"
 
-@interface DailyPaperController : NSObject {
+@interface DailyPaperController : NSObject <WallpaperViewDelegate> {
 	IBOutlet DailyPaprMenu *menu;
 	WallpaperRepository *repository;
 	WallpaperWebService *webService;

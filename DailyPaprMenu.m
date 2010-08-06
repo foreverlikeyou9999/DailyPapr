@@ -3,11 +3,15 @@
 
 @implementation DailyPaprMenu
 
+@synthesize controllerRef;
 
 -(void)awakeFromNib
 {	
+	view.delegate = controllerRef;
+	
 	NSMenuItem *menuItem = [self itemAtIndex:0];
 	[menuItem setView: view];
+	[menuItem setAction:@selector(wallpaperClick:)];
 	[menuItem setTarget:self];
 }
 
@@ -18,6 +22,11 @@
 	[view display];
 	
 	[wallpaper release];
+}
+	 
+-(IBAction)wallpaperClick:(id)sender
+{
+	NSLog(@"Clicou no wallpaper!");
 }
 
 -(void)dealloc
