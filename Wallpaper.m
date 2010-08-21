@@ -4,7 +4,7 @@
 @implementation Wallpaper
 
 @synthesize thumbnail;
-
+@synthesize original;
 
 +(Wallpaper *)wallpaperDefault
 {
@@ -58,6 +58,7 @@
 -(void)dealloc
 {
 	[thumbnail release];
+	[original release];
 	
 	[super dealloc];
 }

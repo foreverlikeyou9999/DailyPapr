@@ -22,6 +22,7 @@
 		D9BE314B11E2D6DD00FFA4DF /* WallpaperRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */; };
 		D9BE315D11E2D91800FFA4DF /* Wallpaper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BE30A011E2C99300FFA4DF /* Wallpaper.m */; };
 		D9BE315E11E2D91800FFA4DF /* WallpaperRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */; };
+		D9CBB56E121F92BA00B5419F /* OriginalDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CBB56D121F92BA00B5419F /* OriginalDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		D9BE30A011E2C99300FFA4DF /* Wallpaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wallpaper.m; sourceTree = "<group>"; };
 		D9BE314911E2D6DD00FFA4DF /* WallpaperRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperRepository.h; sourceTree = "<group>"; };
 		D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperRepository.m; sourceTree = "<group>"; };
+		D9CBB56C121F92BA00B5419F /* OriginalDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalDownloader.h; sourceTree = "<group>"; };
+		D9CBB56D121F92BA00B5419F /* OriginalDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,8 @@
 				D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */,
 				D9568C6511EDDC0E00776DA8 /* WallpaperWebService.h */,
 				D9568C6611EDDC0E00776DA8 /* WallpaperWebService.m */,
+				D9CBB56C121F92BA00B5419F /* OriginalDownloader.h */,
+				D9CBB56D121F92BA00B5419F /* OriginalDownloader.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				D94B976311EBE97B00C2FC4C /* DailyPaprMenu.m in Sources */,
 				D9568C6711EDDC0E00776DA8 /* WallpaperWebService.m in Sources */,
 				D964911611F52B5500A58D0A /* DailyPaperController.m in Sources */,
+				D9CBB56E121F92BA00B5419F /* OriginalDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

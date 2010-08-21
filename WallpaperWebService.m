@@ -61,12 +61,24 @@
 	if ([webData length] > 0) {
 		NSError *error;
 		NSXMLDocument *document = [[NSXMLDocument alloc] initWithData:webData options:NSXMLDocumentTidyHTML error:&error];
-		NSArray *nodes = [[document rootElement] nodesForXPath:@"//div[@class='preview']/a/img" error:&error];		
-		for (NSXMLElement *img in nodes) {
+		NSArray *thumbnails = [[document rootElement] nodesForXPath:@"//div[@class='preview']/a/img" error:&error];		
+		for (NSXMLElement *img in thumbnails) {
 			Wallpaper *wallpaper = [Wallpaper wallpaperWithThumbnailURL:[NSURL URLWithString:[[img attributeForName:@"src"] stringValue]]];
 			[wallpaper retain];
 			[wallpapers addObject:wallpaper];
 		}
+		
+		NSArray *originals = [[document rootElement] nodesForXPath:@"//div[@class='preview']/div[@class='download']/div" error:&error];		
+		NSUInteger i, count = [wallpapers count];
+		for (i = 0; i < count; i++) {			
+			NSXMLElement *div = [originals objectAtIndex:i];
+			NSXMLElement *link = [[div elementsForName:@"a"] objectAtIndex:0];			
+			NSString *originalURL = [[link attributeForName:@"href"] stringValue];
+						
+			Wallpaper *paper = [wallpapers objectAtIndex:i];
+			paper.original = [NSURL URLWithString:[@"http://interfacelift.com" stringByAppendingString:originalURL]];
+			[wallpapers replaceObjectAtIndex:i withObject:paper];
+		}		
 		
 		[delegate receiveWallpapers:wallpapers];		
 	} 

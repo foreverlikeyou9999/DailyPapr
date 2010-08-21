@@ -26,8 +26,6 @@
 	[wallpaper release];
 }
 
-#define menuItem ([self enclosingMenuItem])
-
 -(void)mouseDown:(NSEvent *)theEvent 
 {
 	[delegate mouseDownAction:wallpaper];

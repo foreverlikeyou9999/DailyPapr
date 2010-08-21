@@ -35,15 +35,19 @@
 
 -(void)mouseDownAction:(Wallpaper *)clickedWallpaper
 {
-	NSDate *date = [NSDate date];	
+	NSDate *date = [NSDate date];
 	unsigned long actualTime = [date timeIntervalSinceReferenceDate];	
 	id path = [@"/tmp/" stringByAppendingFormat: @"%qu.jpg", actualTime];	
 	NSLog(@"Saving wallpaper to %@", path);
 	
-	NSData *data = [NSData dataWithContentsOfURL:clickedWallpaper.thumbnail];
-	[data writeToFile:path atomically:YES];		
-	NSURL *fileURL = [NSURL fileURLWithPath:path];
-	
+	OriginalDownloader *downloader = [[OriginalDownloader alloc] init];
+	downloader.delegate = self;
+	[downloader download:clickedWallpaper.original to:path];
+}
+
+-(void)downloadDidFinish:(NSString *)filePath
+{	
+	NSURL *fileURL = [NSURL fileURLWithPath:filePath];	
 	NSError *error;
 	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:NO], NSWorkspaceDesktopImageAllowClippingKey, [NSNumber numberWithInteger:NSImageScaleProportionallyUpOrDown], NSWorkspaceDesktopImageScalingKey, nil];
 	BOOL result = [[NSWorkspace sharedWorkspace] setDesktopImageURL:fileURL forScreen:[[NSScreen screens] lastObject] options:options error:&error];
@@ -51,6 +55,7 @@
 		NSLog(@"Error: %@", [error localizedDescription]);
 	}	
 }
+
 
 -(void)dealloc
 {
