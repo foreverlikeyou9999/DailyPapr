@@ -16,21 +16,26 @@
 
 -(void) setUpWallpaper:(Wallpaper *)aWallpaper
 {
-	wallpaper = aWallpaper;	
-	[wallpaper retain];	
+	wallpaper = aWallpaper;
+	[wallpaper retain];
 	
-	NSURL *imageURL = wallpaper.thumbnail;
-	NSData *imageData = [imageURL resourceDataUsingCache:NO];
-	image = [[[NSImage alloc] initWithData:imageData] retain];
+	NSImage *newImage = [[[NSImage alloc] initWithData:[wallpaper.thumbnail resourceDataUsingCache:NO]] retain];
 	
-	[wallpaper release];
+	if(image != nil) {
+		[image release];
+	}
+	
+	image = [newImage copyWithZone:nil];
+	[image retain];
+	
+	[newImage release];
+	[wallpaper release];	
 }
 
 -(void)mouseDown:(NSEvent *)theEvent 
 {
 	[delegate mouseDownAction:wallpaper];
 }
-
 
 - (Boolean) wallpaperConfigured 
 {

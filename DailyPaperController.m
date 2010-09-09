@@ -26,9 +26,7 @@
 
 -(void)awakeFromNib
 {
-	webService = [[[WallpaperWebService alloc] init] retain];	
-	repository = [[[WallpaperRepository alloc] initWithWebService:webService] retain];
-	
+	repository = [[[WallpaperRepository alloc] init] retain];	
 	[self configureMenu];
 }
 
@@ -37,7 +35,7 @@
 {
 	NSDate *date = [NSDate date];
 	unsigned long actualTime = [date timeIntervalSinceReferenceDate];	
-	id path = [@"/tmp/" stringByAppendingFormat: @"%qu.jpg", actualTime];	
+	id path = [@"/Users/diogo/Pictures/" stringByAppendingFormat: @"%qu.jpg", actualTime];	
 	NSLog(@"Saving wallpaper to %@", path);
 	
 	OriginalDownloader *downloader = [[OriginalDownloader alloc] init];
@@ -59,7 +57,6 @@
 
 -(void)dealloc
 {
-	[webService release];
 	[repository release];
 	[menu release];
 	

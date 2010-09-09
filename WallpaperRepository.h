@@ -1,14 +1,14 @@
 #import <Cocoa/Cocoa.h>
 #import "Wallpaper.h"
-#import "WallpaperWebService.h"
+#import "DPConnection.h"
+#import "InterfaceLiftClient.h"
 
-@interface WallpaperRepository : NSObject <WallpaperWebServiceDelegate> {
+@interface WallpaperRepository : NSObject <InterfaceLiftClientDelegate> {
 	NSArray *wallpapers;
-	WallpaperWebService *webService;
 	NSUInteger wallpaperCalls;
+	InterfaceLiftClient* interfaceLift;
 }
 
--(id)initWithWebService:(WallpaperWebService *)aWebService;
 -(Wallpaper *)next;
 
 @end

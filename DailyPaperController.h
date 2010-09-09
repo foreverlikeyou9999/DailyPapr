@@ -1,13 +1,11 @@
 #import <Cocoa/Cocoa.h>
 #import "DailyPaprMenu.h"
 #import "WallpaperRepository.h"
-#import "WallpaperWebService.h"
 #import "OriginalDownloader.h"
 
 @interface DailyPaperController : NSObject <WallpaperViewDelegate, OriginalDownloaderDelegate> {
 	IBOutlet DailyPaprMenu *menu;
 	WallpaperRepository *repository;
-	WallpaperWebService *webService;
 }
 
 -(IBAction)nextWallpaper:(id)sender;

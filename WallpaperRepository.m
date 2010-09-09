@@ -3,15 +3,13 @@
 
 @implementation WallpaperRepository
 
--(id)initWithWebService:(WallpaperWebService *)aWebService
+-(id)init
 {
-	if([super init]) {
-		webService = aWebService;
-		webService.delegate = self;
-		[webService doRequest];
-		wallpaperCalls = 0;
-	}
-	
+	self = [super init];
+	interfaceLift = [[InterfaceLiftClient alloc] initWithDelegate:self];
+	[interfaceLift getWallpapers];		
+	wallpaperCalls = 0;
+		
 	return self;
 }
 
@@ -33,17 +31,22 @@
 	}	
 }
 
--(void)receiveWallpapers:(NSArray *)aWallpapersArray
+- (void)interfaceLiftClientDidSucceed:(NSArray *)wallpapersArray
 {
-	wallpapers = [[NSArray alloc] initWithArray:aWallpapersArray];
+	wallpapers = [[NSArray alloc] initWithArray:wallpapersArray];
 	[wallpapers retain];
 	NSLog(@"%u wallpapers reveived.", [wallpapers count]);
+}
+
+- (void)interfaceLiftClientDidFail:(id)sender error:(NSString*)error
+{
+	
 }
 
 -(void)dealloc
 {
 	[wallpapers release];
-	[webService release];
+	[interfaceLift release];
 	
 	[super dealloc];
 }
