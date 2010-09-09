@@ -1,4 +1,4 @@
-#import "DailyPaperController.h"
+#import "DailyPaprController.h"
 
 
 @implementation DailyPaperController

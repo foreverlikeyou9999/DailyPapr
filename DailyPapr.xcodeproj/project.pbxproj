@@ -13,17 +13,15 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		D9028F9311DD7A07009B2AEA /* XmlParseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D9028F9211DD7A07009B2AEA /* XmlParseTest.m */; };
 		D9028F9511DD7AFB009B2AEA /* InterfaceLIFT.html in Resources */ = {isa = PBXBuildFile; fileRef = D9028F9411DD7AFB009B2AEA /* InterfaceLIFT.html */; };
-		D94B976311EBE97B00C2FC4C /* DailyPaprMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B976211EBE97B00C2FC4C /* DailyPaprMenu.m */; };
-		D95ABDCF11DAB94700BD0696 /* WallpaperView.m in Sources */ = {isa = PBXBuildFile; fileRef = D95ABDCE11DAB94700BD0696 /* WallpaperView.m */; };
 		D95ABE1411DACE5B00BD0696 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95ABE1311DACE5B00BD0696 /* wallpaper.jpg */; };
-		D964911611F52B5500A58D0A /* DailyPaperController.m in Sources */ = {isa = PBXBuildFile; fileRef = D964911511F52B5500A58D0A /* DailyPaperController.m */; };
-		D9A5AC37123865E2006B77F2 /* DPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AC36123865E2006B77F2 /* DPConnection.m */; };
-		D9A5AC3E1238713D006B77F2 /* InterfaceLiftClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AC3D1238713D006B77F2 /* InterfaceLiftClient.m */; };
-		D9BE30A111E2C99300FFA4DF /* Wallpaper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BE30A011E2C99300FFA4DF /* Wallpaper.m */; };
-		D9BE314B11E2D6DD00FFA4DF /* WallpaperRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */; };
-		D9BE315D11E2D91800FFA4DF /* Wallpaper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BE30A011E2C99300FFA4DF /* Wallpaper.m */; };
-		D9BE315E11E2D91800FFA4DF /* WallpaperRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */; };
-		D9CBB56E121F92BA00B5419F /* OriginalDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CBB56D121F92BA00B5419F /* OriginalDownloader.m */; };
+		D9A5AD47123886EB006B77F2 /* Wallpaper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD35123886EB006B77F2 /* Wallpaper.m */; };
+		D9A5AD48123886EB006B77F2 /* WallpaperRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD37123886EB006B77F2 /* WallpaperRepository.m */; };
+		D9A5AD49123886EB006B77F2 /* DPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD3A123886EB006B77F2 /* DPConnection.m */; };
+		D9A5AD4B123886EB006B77F2 /* InterfaceLiftClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD3E123886EB006B77F2 /* InterfaceLiftClient.m */; };
+		D9A5AD4C123886EB006B77F2 /* OriginalDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD40123886EB006B77F2 /* OriginalDownloader.m */; };
+		D9A5AD4D123886EB006B77F2 /* DailyPaprMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD43123886EB006B77F2 /* DailyPaprMenu.m */; };
+		D9A5AD4E123886EB006B77F2 /* WallpaperView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD45123886EB006B77F2 /* WallpaperView.m */; };
+		D9A5AD5A12388761006B77F2 /* DailyPaprController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AD5912388761006B77F2 /* DailyPaprController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,23 +39,23 @@
 		D9028F7C11DD792B009B2AEA /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		D9028F9211DD7A07009B2AEA /* XmlParseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlParseTest.m; sourceTree = "<group>"; };
 		D9028F9411DD7AFB009B2AEA /* InterfaceLIFT.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = InterfaceLIFT.html; sourceTree = "<group>"; };
-		D94B976111EBE97B00C2FC4C /* DailyPaprMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyPaprMenu.h; sourceTree = "<group>"; };
-		D94B976211EBE97B00C2FC4C /* DailyPaprMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyPaprMenu.m; sourceTree = "<group>"; };
-		D95ABDCD11DAB94700BD0696 /* WallpaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperView.h; sourceTree = "<group>"; };
-		D95ABDCE11DAB94700BD0696 /* WallpaperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperView.m; sourceTree = "<group>"; };
 		D95ABE1311DACE5B00BD0696 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
-		D964911411F52B5500A58D0A /* DailyPaperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyPaperController.h; sourceTree = "<group>"; };
-		D964911511F52B5500A58D0A /* DailyPaperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyPaperController.m; sourceTree = "<group>"; };
-		D9A5AC35123865E2006B77F2 /* DPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConnection.h; sourceTree = "<group>"; };
-		D9A5AC36123865E2006B77F2 /* DPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPConnection.m; sourceTree = "<group>"; };
-		D9A5AC3C1238713D006B77F2 /* InterfaceLiftClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceLiftClient.h; sourceTree = "<group>"; };
-		D9A5AC3D1238713D006B77F2 /* InterfaceLiftClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceLiftClient.m; sourceTree = "<group>"; };
-		D9BE309F11E2C99300FFA4DF /* Wallpaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wallpaper.h; sourceTree = "<group>"; };
-		D9BE30A011E2C99300FFA4DF /* Wallpaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wallpaper.m; sourceTree = "<group>"; };
-		D9BE314911E2D6DD00FFA4DF /* WallpaperRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperRepository.h; sourceTree = "<group>"; };
-		D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperRepository.m; sourceTree = "<group>"; };
-		D9CBB56C121F92BA00B5419F /* OriginalDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalDownloader.h; sourceTree = "<group>"; };
-		D9CBB56D121F92BA00B5419F /* OriginalDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalDownloader.m; sourceTree = "<group>"; };
+		D9A5AD34123886EB006B77F2 /* Wallpaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wallpaper.h; sourceTree = "<group>"; };
+		D9A5AD35123886EB006B77F2 /* Wallpaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wallpaper.m; sourceTree = "<group>"; };
+		D9A5AD36123886EB006B77F2 /* WallpaperRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperRepository.h; sourceTree = "<group>"; };
+		D9A5AD37123886EB006B77F2 /* WallpaperRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperRepository.m; sourceTree = "<group>"; };
+		D9A5AD39123886EB006B77F2 /* DPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConnection.h; sourceTree = "<group>"; };
+		D9A5AD3A123886EB006B77F2 /* DPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPConnection.m; sourceTree = "<group>"; };
+		D9A5AD3D123886EB006B77F2 /* InterfaceLiftClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceLiftClient.h; sourceTree = "<group>"; };
+		D9A5AD3E123886EB006B77F2 /* InterfaceLiftClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceLiftClient.m; sourceTree = "<group>"; };
+		D9A5AD3F123886EB006B77F2 /* OriginalDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalDownloader.h; sourceTree = "<group>"; };
+		D9A5AD40123886EB006B77F2 /* OriginalDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalDownloader.m; sourceTree = "<group>"; };
+		D9A5AD42123886EB006B77F2 /* DailyPaprMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyPaprMenu.h; sourceTree = "<group>"; };
+		D9A5AD43123886EB006B77F2 /* DailyPaprMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyPaprMenu.m; sourceTree = "<group>"; };
+		D9A5AD44123886EB006B77F2 /* WallpaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperView.h; sourceTree = "<group>"; };
+		D9A5AD45123886EB006B77F2 /* WallpaperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperView.m; sourceTree = "<group>"; };
+		D9A5AD5812388761006B77F2 /* DailyPaprController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyPaprController.h; sourceTree = "<group>"; };
+		D9A5AD5912388761006B77F2 /* DailyPaprController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyPaprController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,15 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D964911411F52B5500A58D0A /* DailyPaperController.h */,
-				D964911511F52B5500A58D0A /* DailyPaperController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +107,7 @@
 		29B97314FDCFA39411CA2CEA /* DailyPapr */ = {
 			isa = PBXGroup;
 			children = (
-				D9A5AC34123865C0006B77F2 /* Network */,
-				D959FBB511F6938800319BB7 /* Model */,
-				D959FBB411F6936E00319BB7 /* View */,
-				080E96DDFE201D6D7F000001 /* Controller */,
+				D9A5AD2F123886EB006B77F2 /* Classes */,
 				D9028F9011DD79CE009B2AEA /* Test Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -170,39 +156,59 @@
 			name = "Test Classes";
 			sourceTree = "<group>";
 		};
-		D959FBB411F6936E00319BB7 /* View */ = {
+		D9A5AD2F123886EB006B77F2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D94B976111EBE97B00C2FC4C /* DailyPaprMenu.h */,
-				D94B976211EBE97B00C2FC4C /* DailyPaprMenu.m */,
-				D95ABDCD11DAB94700BD0696 /* WallpaperView.h */,
-				D95ABDCE11DAB94700BD0696 /* WallpaperView.m */,
+				D9A5AD30123886EB006B77F2 /* Controller */,
+				D9A5AD33123886EB006B77F2 /* Model */,
+				D9A5AD38123886EB006B77F2 /* Network */,
+				D9A5AD41123886EB006B77F2 /* View */,
 			);
-			name = View;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		D959FBB511F6938800319BB7 /* Model */ = {
+		D9A5AD30123886EB006B77F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D9BE309F11E2C99300FFA4DF /* Wallpaper.h */,
-				D9BE30A011E2C99300FFA4DF /* Wallpaper.m */,
-				D9BE314911E2D6DD00FFA4DF /* WallpaperRepository.h */,
-				D9BE314A11E2D6DD00FFA4DF /* WallpaperRepository.m */,
+				D9A5AD5812388761006B77F2 /* DailyPaprController.h */,
+				D9A5AD5912388761006B77F2 /* DailyPaprController.m */,
 			);
-			name = Model;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		D9A5AC34123865C0006B77F2 /* Network */ = {
+		D9A5AD33123886EB006B77F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9CBB56C121F92BA00B5419F /* OriginalDownloader.h */,
-				D9CBB56D121F92BA00B5419F /* OriginalDownloader.m */,
-				D9A5AC35123865E2006B77F2 /* DPConnection.h */,
-				D9A5AC36123865E2006B77F2 /* DPConnection.m */,
-				D9A5AC3C1238713D006B77F2 /* InterfaceLiftClient.h */,
-				D9A5AC3D1238713D006B77F2 /* InterfaceLiftClient.m */,
+				D9A5AD34123886EB006B77F2 /* Wallpaper.h */,
+				D9A5AD35123886EB006B77F2 /* Wallpaper.m */,
+				D9A5AD36123886EB006B77F2 /* WallpaperRepository.h */,
+				D9A5AD37123886EB006B77F2 /* WallpaperRepository.m */,
 			);
-			name = Network;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9A5AD38123886EB006B77F2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D9A5AD39123886EB006B77F2 /* DPConnection.h */,
+				D9A5AD3A123886EB006B77F2 /* DPConnection.m */,
+				D9A5AD3D123886EB006B77F2 /* InterfaceLiftClient.h */,
+				D9A5AD3E123886EB006B77F2 /* InterfaceLiftClient.m */,
+				D9A5AD3F123886EB006B77F2 /* OriginalDownloader.h */,
+				D9A5AD40123886EB006B77F2 /* OriginalDownloader.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D9A5AD41123886EB006B77F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9A5AD42123886EB006B77F2 /* DailyPaprMenu.h */,
+				D9A5AD43123886EB006B77F2 /* DailyPaprMenu.m */,
+				D9A5AD44123886EB006B77F2 /* WallpaperView.h */,
+				D9A5AD45123886EB006B77F2 /* WallpaperView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,14 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				D95ABDCF11DAB94700BD0696 /* WallpaperView.m in Sources */,
-				D9BE30A111E2C99300FFA4DF /* Wallpaper.m in Sources */,
-				D9BE314B11E2D6DD00FFA4DF /* WallpaperRepository.m in Sources */,
-				D94B976311EBE97B00C2FC4C /* DailyPaprMenu.m in Sources */,
-				D964911611F52B5500A58D0A /* DailyPaperController.m in Sources */,
-				D9CBB56E121F92BA00B5419F /* OriginalDownloader.m in Sources */,
-				D9A5AC37123865E2006B77F2 /* DPConnection.m in Sources */,
-				D9A5AC3E1238713D006B77F2 /* InterfaceLiftClient.m in Sources */,
+				D9A5AD47123886EB006B77F2 /* Wallpaper.m in Sources */,
+				D9A5AD48123886EB006B77F2 /* WallpaperRepository.m in Sources */,
+				D9A5AD49123886EB006B77F2 /* DPConnection.m in Sources */,
+				D9A5AD4B123886EB006B77F2 /* InterfaceLiftClient.m in Sources */,
+				D9A5AD4C123886EB006B77F2 /* OriginalDownloader.m in Sources */,
+				D9A5AD4D123886EB006B77F2 /* DailyPaprMenu.m in Sources */,
+				D9A5AD4E123886EB006B77F2 /* WallpaperView.m in Sources */,
+				D9A5AD5A12388761006B77F2 /* DailyPaprController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,8 +327,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9028F9311DD7A07009B2AEA /* XmlParseTest.m in Sources */,
-				D9BE315D11E2D91800FFA4DF /* Wallpaper.m in Sources */,
-				D9BE315E11E2D91800FFA4DF /* WallpaperRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
