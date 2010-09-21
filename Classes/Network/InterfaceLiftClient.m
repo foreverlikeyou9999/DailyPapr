@@ -12,54 +12,35 @@
 
 @implementation InterfaceLiftClient
 
-- (void)getWallpapers
+
+-(NSString*)getURL
 {
-	//TODO: replace the screen resolution for the user default.	
-	[super get: DEFAULT_URL];
+	return DEFAULT_URL;	
 }
 
-- (void)DPConnectionDidFailWithError:(NSError*)error
+- (NSArray*)parseDocument:(NSXMLDocument*)document
 {
-	[delegate interfaceLiftClientDidFail:self error:[error localizedDescription]];
-    [self autorelease];
-}
-
-- (void)DPConnectionDidFinishLoading:(NSString*)content
-{
-    if (statusCode == 200) {
-        
-		if ([buffer length] > 0) {
-			
-			NSMutableArray *wallpapers = [[NSMutableArray alloc]initWithCapacity:10];			
-			NSError *error;
-			NSXMLDocument *document = [[NSXMLDocument alloc] initWithData:buffer options:NSXMLDocumentTidyHTML error:&error];
-			NSArray *thumbnails = [[document rootElement] nodesForXPath:@"//div[@class='preview']/a/img" error:&error];		
-			for (NSXMLElement *img in thumbnails) {
-				Wallpaper *wallpaper = [Wallpaper wallpaperWithThumbnailURL:[NSURL URLWithString:[[img attributeForName:@"src"] stringValue]]];
-				[wallpaper retain];
-				[wallpapers addObject:wallpaper];
-			}
-			
-			NSArray *originals = [[document rootElement] nodesForXPath:@"//div[@class='preview']/div[@class='download']/div" error:&error];		
-			NSUInteger i, count = [wallpapers count];
-			for (i = 0; i < count; i++) {			
-				NSXMLElement *div = [originals objectAtIndex:i];
-				NSXMLElement *link = [[div elementsForName:@"a"] objectAtIndex:0];			
-				NSString *originalURL = [[link attributeForName:@"href"] stringValue];
-				
-				Wallpaper *paper = [wallpapers objectAtIndex:i];
-				paper.original = [NSURL URLWithString:[@"http://interfacelift.com" stringByAppendingString:originalURL]];
-				[wallpapers replaceObjectAtIndex:i withObject:paper];
-			}		
-			
-			[delegate interfaceLiftClientDidSucceed:wallpapers];
-		} 
+	NSMutableArray *wallpapers = [[NSMutableArray alloc]initWithCapacity:10];
+	
+	NSArray *thumbnails = [[document rootElement] nodesForXPath:@"//div[@class='preview']/a/img" error:&error];		
+	for (NSXMLElement *img in thumbnails) {
+		Wallpaper *wallpaper = [Wallpaper wallpaperWithThumbnailURL:[NSURL URLWithString:[[img attributeForName:@"src"] stringValue]]];
+		[wallpaper retain];
+		[wallpapers addObject:wallpaper];
+	}
+	
+	NSArray *originals = [[document rootElement] nodesForXPath:@"//div[@class='preview']/div[@class='download']/div" error:&error];		
+	NSUInteger i, count = [wallpapers count];
+	for (i = 0; i < count; i++) {			
+		NSXMLElement *div = [originals objectAtIndex:i];
+		NSXMLElement *link = [[div elementsForName:@"a"] objectAtIndex:0];			
+		NSString *originalURL = [[link attributeForName:@"href"] stringValue];
 		
-    }
-    else {
-		[delegate interfaceLiftClientDidFail:self error:[NSString stringWithFormat:@"InterfaceLift server responded with %d", statusCode]];
-    }
-    [self autorelease];
+		Wallpaper *paper = [wallpapers objectAtIndex:i];
+		paper.original = [NSURL URLWithString:[@"http://interfacelift.com" stringByAppendingString:originalURL]];
+		[wallpapers replaceObjectAtIndex:i withObject:paper];
+	}
+	
+	return wallpapers;
 }
-
 @end

@@ -1,5 +1,5 @@
 //
-//  InterfaceLiftClient.h
+//  InterfaceLiftClient.m
 //  DailyPapr
 //
 //  Created by Diogo on 9/8/10.
@@ -7,20 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "DPConnection.h"
-#import "Wallpaper.h"
+#import "Client.h"
 
-@protocol InterfaceLiftClientDelegate
-- (void)interfaceLiftClientDidSucceed:(NSArray*)wallpapers;
-- (void)interfaceLiftClientDidFail:(id)sender error:(NSString*)error;
-@end
-
-
-@interface InterfaceLiftClient : DPConnection {
-
+@interface InterfaceLiftClient : Client
+{
+	
 }
-
-
-- (void)getWallpapers;
 
 @end

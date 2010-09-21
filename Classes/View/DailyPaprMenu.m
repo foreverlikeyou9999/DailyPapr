@@ -3,35 +3,35 @@
 
 @implementation DailyPaprMenu
 
-@synthesize controllerRef;
+@synthesize delegate;
 
 -(void)awakeFromNib
 {	
-	view.delegate = controllerRef;
-	
-	NSMenuItem *menuItem = [self itemAtIndex:0];
+	view.delegate = self;	
+	menuItem = [self itemAtIndex:0];
 	[menuItem setView: view];
-	[menuItem setAction:@selector(wallpaperClick:)];
-	[menuItem setTarget:self];
 }
 
 -(void)setUpWallpaper:(Wallpaper *)wallpaper
 {
 	[wallpaper retain];
+	
 	[view setUpWallpaper:wallpaper];
-	[view display];
+	[view display];	
 	
 	[wallpaper release];
-}
-	 
--(IBAction)wallpaperClick:(id)sender
+} 
+
+-(void)mouseDownAction:(Wallpaper *)clickedWallpaper
 {
-	NSLog(@"Clicou no wallpaper!");
+	NSLog(@"clicou");
+	[delegate mouseDownAction:clickedWallpaper];
 }
 
 -(void)dealloc
 {
 	[view release];
+	[menuItem release];
 	
 	[super dealloc];
 }

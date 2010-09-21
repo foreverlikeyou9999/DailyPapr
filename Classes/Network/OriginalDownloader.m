@@ -16,7 +16,7 @@
 -(void)download:(NSURL *)originalURl to:(NSString *)aFilePath
 {
 	
-	filePath = aFilePath;
+	filePath = [aFilePath retain];
 	
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:originalURl
 														   cachePolicy:NSURLRequestUseProtocolCachePolicy
@@ -51,7 +51,6 @@
 
 -(void)dealloc
 {
-		
 	[filePath release];
 	
 	[super dealloc];

@@ -5,19 +5,15 @@
 
 -(IBAction)nextWallpaper:(id)sender
 {
-	NSLog(@"nextWallpaper ... ");
-	Wallpaper *wallpaper = [repository next];
-	
-	NSLog(@"%@", [wallpaper.thumbnail description]);
-	
-	[menu setUpWallpaper:wallpaper];	
+	Wallpaper* wallpaper = [repository next];
+	[menu setUpWallpaper:wallpaper];
 }
 
 -(void)configureMenu
 {
-	menu.controllerRef = self;
+	menu.delegate = self;
 	
-	NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:80.0];
+	statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:80.0];
 	[statusItem retain];
 	[statusItem setTitle: @"DailyPapr"];
 	[statusItem setMenu:menu];
@@ -26,21 +22,25 @@
 
 -(void)awakeFromNib
 {
-	repository = [[[WallpaperRepository alloc] init] retain];	
+	repository = [[[WallpaperRepository alloc] init] retain];
 	[self configureMenu];
 }
 
 
 -(void)mouseDownAction:(Wallpaper *)clickedWallpaper
 {
+	[clickedWallpaper retain];
+	
 	NSDate *date = [NSDate date];
-	unsigned long actualTime = [date timeIntervalSinceReferenceDate];	
-	id path = [@"/Users/diogo/Pictures/" stringByAppendingFormat: @"%qu.jpg", actualTime];	
+	unsigned long actualTime = [date timeIntervalSinceReferenceDate];
+	[date release];	
+	
+	id path = [@"/Users/diogo/Pictures/" stringByAppendingFormat: @"%qu.jpg", actualTime];
 	NSLog(@"Saving wallpaper to %@", path);
 	
 	OriginalDownloader *downloader = [[OriginalDownloader alloc] init];
 	downloader.delegate = self;
-	[downloader download:clickedWallpaper.original to:path];
+	[downloader download:clickedWallpaper.original to:path];	
 }
 
 -(void)downloadDidFinish:(NSString *)filePath
@@ -59,6 +59,7 @@
 {
 	[repository release];
 	[menu release];
+	[statusItem release];
 	
 	[super dealloc];
 }

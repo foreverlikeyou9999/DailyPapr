@@ -2,14 +2,14 @@
 #import "WallpaperView.h"
 #import "Wallpaper.h"
 
-@interface DailyPaprMenu : NSMenu {
+@interface DailyPaprMenu : NSMenu <WallpaperViewDelegate> {
 	IBOutlet WallpaperView *view;
-	id <WallpaperViewDelegate> controllerRef;
+	NSMenuItem *menuItem;
+	id <WallpaperViewDelegate> delegate;
 }
 
-@property (retain, nonatomic) id <WallpaperViewDelegate> controllerRef;
+@property (retain, nonatomic) id <WallpaperViewDelegate> delegate;
 
 -(void)setUpWallpaper:(Wallpaper *)wallpaper;
--(IBAction)wallpaperClick: (id)sender;
 
 @end

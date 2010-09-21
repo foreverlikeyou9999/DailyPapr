@@ -3,12 +3,14 @@
 #import "DPConnection.h"
 #import "InterfaceLiftClient.h"
 
-@interface WallpaperRepository : NSObject <InterfaceLiftClientDelegate> {
-	NSArray *wallpapers;
+@interface WallpaperRepository : NSObject <ClientDelegate> {
+	NSMutableArray *wallpapers;
 	NSUInteger wallpaperCalls;
 	InterfaceLiftClient* interfaceLift;
 }
 
--(Wallpaper *)next;
+- (Wallpaper *)next;
+- (BOOL)hasReceivedWallpapers;
+- (BOOL)hasWallpapers;
 
 @end

@@ -16,7 +16,6 @@
 
 -(void)setUp;
 -(void)setUpWallpaper:(Wallpaper *)aWallpaper;
--(Boolean)wallpaperConfigured;
 -(NSRect)viewRect;
 -(NSRect)imageRect;
 

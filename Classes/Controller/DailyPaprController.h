@@ -5,6 +5,7 @@
 
 @interface DailyPaperController : NSObject <WallpaperViewDelegate, OriginalDownloaderDelegate> {
 	IBOutlet DailyPaprMenu *menu;
+	NSStatusItem *statusItem;
 	WallpaperRepository *repository;
 }
 
